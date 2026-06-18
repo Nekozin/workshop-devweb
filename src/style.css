@@ -1,0 +1,234 @@
+/* RESET GERAL*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+  }
+  
+  /* SCROLL SUAVE */
+  html{
+    scroll-behavior:smooth;
+  }
+  
+  /* COR GERAL */
+  body{
+    background:#f2f2f2;
+    color:#111;
+  }
+  
+  /* NAVBAR*/
+  .navbar{
+    background:#222;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    /* HEADER FIXO */
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+  }
+  
+  /* LOGO */
+  .logo{
+    font-size:24px;
+    font-weight:bold;
+  }
+  
+  /* LISTA DE LINKS */
+  .nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
+  }
+  
+  /* LINKS */
+  .nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+  }
+  
+  /* HOVER DOS LINKS */
+  .nav-links a:hover{
+    color:#aaa;
+  }
+  
+  /* HERO */
+  .hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:80px;
+    padding:80px 10%;
+    background:white;
+    margin-top:80px;
+  }
+  
+  /* IMAGEM PRINCIPAL */
+  .hero-image img{
+    width:500px;
+    max-width:100%;
+    border-radius:10px;
+  }
+  
+  /* TÍTULO PRINCIPAL */
+  .hero-text h1{
+    font-size:64px;
+    font-weight:300;
+    line-height:1.1;
+  }
+  
+  /* TEXTO MENOR */
+  .hero-text p{
+    margin-top:20px;
+    font-size:18px;
+    color:#555;
+  }
+  
+  /* CARROSSEL*/
+  .carousel-section{
+    padding:80px 10%;
+  }
+  
+  /* TÍTULO */
+  .carousel-section h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:36px;
+  }
+  
+  /* ÁREA VISÍVEL */
+  .carousel{
+    overflow:hidden;
+    width:100%;
+  }
+  
+  /* TRILHA DAS IMAGENS */
+  .carousel-track{
+    display:flex;
+    gap:20px;
+    width:max-content;
+  
+    /* VELOCIDADE */
+    animation:scroll 45s linear infinite;
+  }
+  
+  /* PAUSA AO PASSAR O MOUSE */
+  .carousel-track:hover{
+    animation-play-state: paused;
+  }
+  
+  /* CARD */
+  .card{
+    min-width:250px;
+    height:250px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+  }
+  
+  /* IMAGEM DOS CARDS */
+  .card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+  
+  /* ANIMAÇÃO */
+  @keyframes scroll{
+    from{
+      transform:translateX(0);
+    }
+    to{
+      transform:translateX(-50%);
+    }
+  }
+  
+  /* SOBRE*/
+  .about{
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:80px;
+    padding:100px 10%;
+  }
+  
+  /* TEXTO */
+  .about-text{
+    max-width:500px;
+  }
+  
+  /* TÍTULO */
+  .about-text h2{
+    font-size:42px;
+    margin-bottom:20px;
+  }
+  
+  /* PARÁGRAFO */
+  .about-text p{
+    font-size:18px;
+    line-height:1.8;
+  }
+  
+  /* IMAGEM */
+  .about-image img{
+    width:400px;
+    max-width:100%;
+    border-radius:10px;
+  }
+  
+  /* JORNADA*/
+  .journey{
+    padding:100px 10%;
+    text-align:center;
+  }
+  
+  /* TÍTULO */
+  .journey h2{
+    font-size:42px;
+    margin-bottom:20px;
+  }
+  
+  /* TEXTO */
+  .journey p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+  }
+  
+  /* FOOTER*/
+  footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
+  }
+  
+  /* RESPONSIVO */
+  @media(max-width:900px){
+  
+    /* EMPILHA SEÇÕES */
+    .hero,
+    .about{
+      flex-direction:column;
+      text-align:center;
+    }
+  
+    /* REDUZ TÍTULO */
+    .hero-text h1{
+      font-size:42px;
+    }
+  
+    /* DIMINUI ESPAÇO DOS LINKS */
+    .nav-links{
+      gap:15px;
+    }
+  }
