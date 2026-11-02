@@ -13,7 +13,7 @@
 ## 📌 Sumário
 - [Sobre o Projeto](#-sobre-o-projeto)
 - [Contexto & Desafio Superado](#-contexto--desafio-superado)
-- [Metodologia & Ferramental](#-metodologia--ferramental)
+- [Metodologia & Ferramental](#%EF%B8%8F-metodologia--ferramental)
 - [Vitrine de Projetos dos Estudantes](#-vitrine-de-projetos-dos-estudantes)
 - [Estrutura do Repositório](#-estrutura-do-repositório)
 - [Como Executar Localmente](#-como-executar-localmente)
